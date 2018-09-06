@@ -1,0 +1,8 @@
+{
+  "name": "mvc/wallet-shell/websocket-demo",
+  "description": "WebSocket demo of wallet shell",
+  "license": "MIT",
+  "require": {
+    "textalk/websocket": "1.0.*"
+  }
+}

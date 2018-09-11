@@ -4,8 +4,7 @@
   require __DIR__ . '/vendor/autoload.php';
 
   $tokenType = 'ETH';
-  // \Ratchet\Client\connect('ws://IP:PORT/websocket/'.$tokenType)->then(function($conn) {
-  \Ratchet\Client\connect('ws://45.195.202.209:1988/websocket/'.$tokenType)->then(function($conn) {
+  \Ratchet\Client\connect('ws://IP:PORT/websocket/'.$tokenType)->then(function($conn) {
     $token = "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidXNlcklkIjoxLCJzZXJ2aWNlIjoid2FsbGV0LXNoZWxsIiwidHlwZSI6InRva2VuIiwiaXNBZG1pbiI6MSwiZXhwIjoxNTM2NjM3MDMwfQ.CBM2-HbpQ8R-wUBRpbhb0hzuV9PKSSGxKQmz24rY2WM";
     $authText = "{'type':'token','content':'".$token."'}";
     $conn->send($authText);
